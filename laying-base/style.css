@@ -1,0 +1,69 @@
+*{margin:0}
+
+body{
+    display: grid;
+    box-sizing: border-box;
+    color:aliceblue;
+    /* min-height: 100vh; */
+}
+
+.greed{
+    display: grid;
+    box-sizing: border-box;
+    min-height: 250vh;
+    width: min(95%);
+    margin-inline:auto;
+    text-align: center;
+    grid-template-areas: 'ek'
+                         'dui'
+                         'tin'
+                         'car'
+                         'panch';
+    
+}
+
+.ek{
+    background-color: red;
+    grid-area: ek;
+    padding: 5rem;
+}
+
+.dui{
+    background-color: purple;
+    grid-area: dui;
+    padding: 5rem;
+}
+
+.tin{
+    background-color: blue;
+    grid-area: tin;
+    padding: 5rem;
+}
+
+.car{
+    background-color: greenyellow;
+    grid-area: car;
+    padding: 5rem;
+}
+
+.panch{
+    background-color: orange;
+    grid-area: panch;
+    padding: 5rem;
+}
+
+.choy{
+    background-color: black;
+    grid-area: choy;
+    padding: 5rem
+}
+
+@media (min-width:35rem){
+    .greed{
+        grid-template-rows: 100vh 100vh 50vh;
+        grid-template-areas: 
+        "ek  ek  dui dui"
+        "tin tin car car"
+        "panch panch choy choy";
+    }
+}

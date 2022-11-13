@@ -1,0 +1,125 @@
+*{margin:0; padding:0; box-sizing: border-box;}
+
+body{
+    display: grid;
+    background-color: bisque;
+}
+
+main{
+    display: grid;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+P{ color:rgb(0, 0, 35);}
+
+.red{color:red;}
+.green{color:green;}
+
+.button{
+    background-color: black;
+    border: none;
+    color: bisque;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 0.30rem;
+    padding: 0.40rem 1rem;
+    
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.334);
+}
+
+.button:hover {
+    background-color: red;
+    box-shadow: 10px 10px 30px rgba(255, 0, 0, 0.268);
+}
+
+  .grid-abba{
+    display: grid;
+    gap: 2rem;
+    width: min(95%, 70rem);
+    grid-template-areas: "ek"
+                         "dui"
+                         "tin"
+                         "cchar"
+                         "alga"
+                         "panch"
+                         "choy";
+    margin-inline: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.FirstBox{
+    padding-top:8rem;
+}
+
+.box{
+    border: 0.10rem solid black;
+    border-radius: 1rem;
+    margin: auto;
+    padding: 1rem;
+    font-size: 1rem;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+}
+
+.ek{
+    grid-area: ek;
+    font-size: 1.25rem;
+}
+
+.dui{
+    grid-area: dui;
+    margin: auto;
+}
+
+.tin{
+    grid-area: tin;
+    padding-top:1.25rem;
+    margin: 0 1.25rem;
+}
+
+.cchar{
+    grid-area: cchar;
+    padding-top:1.25rem;
+    font-size: 1.25rem;
+}
+
+.panch{
+    grid-area: panch;
+}
+
+.choy{
+    grid-area: choy;
+}
+
+
+
+@media screen and (min-width:1024px) {
+    .grid-abba{
+        grid-template-rows: 90vh 80vh 3.5rem 45vh;
+        grid-template-areas: 
+        "ek dui"
+        "tin cchar"
+        "alga ."
+        "panch choy";
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023) {
+
+}
+
+@media screen and (max-width:767px) {
+
+}

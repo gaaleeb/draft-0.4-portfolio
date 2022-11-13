@@ -61,7 +61,7 @@ P{ color:rgb(0, 0, 35);}
 }
 
 .FirstBox{
-    padding-top:8rem;
+    padding-top:4rem;
 }
 
 .box{
@@ -107,7 +107,7 @@ P{ color:rgb(0, 0, 35);}
 
 @media screen and (min-width:1024px) {
     .grid-abba{
-        grid-template-rows: 90vh 80vh 3.5rem 45vh;
+        grid-template-rows: 80vh 80vh 3.5rem 45vh;
         grid-template-areas: 
         "ek dui"
         "tin cchar"
@@ -116,10 +116,39 @@ P{ color:rgb(0, 0, 35);}
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1023) {
-
+/* @media screen and (min-width:768px) and (max-width:1023) {
+    .grid-abba{
+        grid-template-rows: 350px 350px 2.5rem 250px 250px;
+        grid-template-areas: 
+        "ek dui"
+        "tin cchar"
+        "alga ."
+        "panch choy";
+    }
+    .FirstBox{
+        padding-top:1rem;
+    }
 }
 
 @media screen and (max-width:767px) {
-
-}
+    .grid-abba{
+        grid-template-rows: 45vh 35vh 45vh 1.5rem 15vh;
+        grid-template-areas:
+                        "dui"
+                        "ek"
+                         "tin"
+                         "alga ."
+                         "panch"
+                         "choy";
+    }
+    .dui{
+        order: 1;
+    }
+    .FirstBox{
+        padding-top:1rem;
+    }
+    .dui{
+        margin: auto;
+        padding-top: 2rem;
+    }
+} */
